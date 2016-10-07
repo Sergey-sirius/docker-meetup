@@ -1,16 +1,18 @@
 # 1. Создаем ноды для Docker'а
 
 ## Если VirtualBox
-docker-machine create --driver virtualbox swarm-00
-docker-machine create --driver virtualbox swarm-01
-docker-machine create --driver virtualbox swarm-02
-docker-machine create --driver virtualbox swarm-03
+
+	docker-machine create --driver virtualbox swarm-00
+	docker-machine create --driver virtualbox swarm-01
+	docker-machine create --driver virtualbox swarm-02
+	docker-machine create --driver virtualbox swarm-03
 
 ## Если DigitalOcean
-docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-00
-docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-01
-docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-02
-docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-03
+
+	docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-00
+	docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-01
+	docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-02
+	docker-machine create --driver digitalocean --digitalocean-access-token `cat ~/do-token` swarm-03
 
 # 2. Создаем менеджера кластера
 
